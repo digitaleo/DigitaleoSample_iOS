@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F9DEE2A6FE247388F7FFCFA /* libPods-DigitaleoSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80313E6A10FD4BEC95B5AD38 /* libPods-DigitaleoSample.a */; };
+		DF0115981A7A785400F6842E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0115971A7A785400F6842E /* RootViewController.m */; };
+		DF01159B1A7A80A000F6842E /* NotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF01159A1A7A80A000F6842E /* NotificationsViewController.m */; };
+		DF01159E1A7A824500F6842E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF01159D1A7A824500F6842E /* HomeViewController.m */; };
 		DF45D9141A7A3C130098963B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF45D9131A7A3C130098963B /* main.m */; };
 		DF45D9171A7A3C130098963B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF45D9161A7A3C130098963B /* AppDelegate.m */; };
-		DF45D91A1A7A3C130098963B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF45D9191A7A3C130098963B /* ViewController.m */; };
 		DF45D91D1A7A3C130098963B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF45D91B1A7A3C130098963B /* Main.storyboard */; };
 		DF45D91F1A7A3C130098963B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF45D91E1A7A3C130098963B /* Images.xcassets */; };
 		DF45D9221A7A3C130098963B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF45D9201A7A3C130098963B /* LaunchScreen.xib */; };
 		DF45D92E1A7A3C130098963B /* DigitaleoSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF45D92D1A7A3C130098963B /* DigitaleoSampleTests.m */; };
+		DF45D9411A7A402E0098963B /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF45D9401A7A402E0098963B /* MenuViewController.m */; };
+		DF45D9511A7A478B0098963B /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF45D9501A7A478B0098963B /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +32,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		80313E6A10FD4BEC95B5AD38 /* libPods-DigitaleoSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DigitaleoSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A877B788FB1A4D5095056F4A /* Pods-DigitaleoSample.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitaleoSample.xcconfig"; path = "Pods/Pods-DigitaleoSample.xcconfig"; sourceTree = "<group>"; };
+		DF0115961A7A785400F6842E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		DF0115971A7A785400F6842E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		DF0115991A7A80A000F6842E /* NotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationsViewController.h; sourceTree = "<group>"; };
+		DF01159A1A7A80A000F6842E /* NotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationsViewController.m; sourceTree = "<group>"; };
+		DF01159C1A7A824500F6842E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		DF01159D1A7A824500F6842E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		DF45D90E1A7A3C130098963B /* DigitaleoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitaleoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF45D9121A7A3C130098963B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF45D9131A7A3C130098963B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF45D9151A7A3C130098963B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DF45D9161A7A3C130098963B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DF45D9181A7A3C130098963B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DF45D9191A7A3C130098963B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DF45D91C1A7A3C130098963B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF45D91E1A7A3C130098963B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DF45D9211A7A3C130098963B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DF45D9271A7A3C130098963B /* DigitaleoSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigitaleoSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF45D92C1A7A3C130098963B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF45D92D1A7A3C130098963B /* DigitaleoSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigitaleoSampleTests.m; sourceTree = "<group>"; };
+		DF45D93F1A7A402E0098963B /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		DF45D9401A7A402E0098963B /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		DF45D94F1A7A478B0098963B /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		DF45D9501A7A478B0098963B /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9DEE2A6FE247388F7FFCFA /* libPods-DigitaleoSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +76,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A91914330BDA459DA34F950A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80313E6A10FD4BEC95B5AD38 /* libPods-DigitaleoSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF0115A11A7A8F3800F6842E /* MenuViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF0115961A7A785400F6842E /* RootViewController.h */,
+				DF0115971A7A785400F6842E /* RootViewController.m */,
+				DF45D93F1A7A402E0098963B /* MenuViewController.h */,
+				DF45D9401A7A402E0098963B /* MenuViewController.m */,
+			);
+			name = MenuViewControllers;
+			sourceTree = "<group>";
+		};
+		DF0115A21A7A8F5900F6842E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF0115A11A7A8F3800F6842E /* MenuViewControllers */,
+				DF01159C1A7A824500F6842E /* HomeViewController.h */,
+				DF01159D1A7A824500F6842E /* HomeViewController.m */,
+				DF45D94F1A7A478B0098963B /* ProfileViewController.h */,
+				DF45D9501A7A478B0098963B /* ProfileViewController.m */,
+				DF0115991A7A80A000F6842E /* NotificationsViewController.h */,
+				DF01159A1A7A80A000F6842E /* NotificationsViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		DF45D9051A7A3C130098963B = {
 			isa = PBXGroup;
 			children = (
 				DF45D9101A7A3C130098963B /* DigitaleoSample */,
 				DF45D92A1A7A3C130098963B /* DigitaleoSampleTests */,
 				DF45D90F1A7A3C130098963B /* Products */,
+				A877B788FB1A4D5095056F4A /* Pods-DigitaleoSample.xcconfig */,
+				A91914330BDA459DA34F950A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,11 +134,10 @@
 			children = (
 				DF45D9151A7A3C130098963B /* AppDelegate.h */,
 				DF45D9161A7A3C130098963B /* AppDelegate.m */,
-				DF45D9181A7A3C130098963B /* ViewController.h */,
-				DF45D9191A7A3C130098963B /* ViewController.m */,
 				DF45D91B1A7A3C130098963B /* Main.storyboard */,
 				DF45D91E1A7A3C130098963B /* Images.xcassets */,
 				DF45D9201A7A3C130098963B /* LaunchScreen.xib */,
+				DF0115A21A7A8F5900F6842E /* ViewControllers */,
 				DF45D9111A7A3C130098963B /* Supporting Files */,
 			);
 			path = DigitaleoSample;
@@ -126,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF45D9311A7A3C130098963B /* Build configuration list for PBXNativeTarget "DigitaleoSample" */;
 			buildPhases = (
+				CFFF503048D34C8C92263B78 /* Check Pods Manifest.lock */,
 				DF45D90A1A7A3C130098963B /* Sources */,
 				DF45D90B1A7A3C130098963B /* Frameworks */,
 				DF45D90C1A7A3C130098963B /* Resources */,
+				4808FA5BE20A44DD875E8695 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,14 +266,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4808FA5BE20A44DD875E8695 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-DigitaleoSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFFF503048D34C8C92263B78 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DF45D90A1A7A3C130098963B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF45D91A1A7A3C130098963B /* ViewController.m in Sources */,
 				DF45D9171A7A3C130098963B /* AppDelegate.m in Sources */,
 				DF45D9141A7A3C130098963B /* main.m in Sources */,
+				DF45D9511A7A478B0098963B /* ProfileViewController.m in Sources */,
+				DF45D9411A7A402E0098963B /* MenuViewController.m in Sources */,
+				DF0115981A7A785400F6842E /* RootViewController.m in Sources */,
+				DF01159E1A7A824500F6842E /* HomeViewController.m in Sources */,
+				DF01159B1A7A80A000F6842E /* NotificationsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,9 +386,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -332,8 +422,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -341,21 +432,29 @@
 		};
 		DF45D9321A7A3C130098963B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A877B788FB1A4D5095056F4A /* Pods-DigitaleoSample.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = DigitaleoSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DigitaleoSample;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DF45D9331A7A3C130098963B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A877B788FB1A4D5095056F4A /* Pods-DigitaleoSample.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = DigitaleoSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DigitaleoSample;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -374,7 +473,7 @@
 				INFOPLIST_FILE = DigitaleoSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigitaleoSample.app/DigitaleoSample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sample App.app/Sample App";
 			};
 			name = Debug;
 		};
@@ -389,7 +488,7 @@
 				INFOPLIST_FILE = DigitaleoSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigitaleoSample.app/DigitaleoSample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sample App.app/Sample App";
 			};
 			name = Release;
 		};
@@ -412,6 +511,7 @@
 				DF45D9331A7A3C130098963B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF45D9341A7A3C130098963B /* Build configuration list for PBXNativeTarget "DigitaleoSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +520,7 @@
 				DF45D9361A7A3C130098963B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

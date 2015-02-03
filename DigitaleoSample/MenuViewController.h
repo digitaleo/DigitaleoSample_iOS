@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MenuViewController.h
 //  DigitaleoSample
 //
 //  Created by Clément Roulland on 29/01/2015.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RESideMenu.h"
 
-@interface ViewController : UIViewController
-
+@interface MenuViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, RESideMenuDelegate>
 
 @end
-
