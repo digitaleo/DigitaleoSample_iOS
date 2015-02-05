@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Digitaleo/Digitaleo.h>
 
 @interface AppDelegate ()
 
@@ -19,7 +20,19 @@
     
     [self initTheme];
     
+    [Digitaleo setupFramework];
+    [EOInstallation registerForRemoteNotifications];
+    
     return YES;
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    [[EOInstallation currentInstallation] setDeviceTokenFromData:deviceToken];
+    [[EOInstallation currentInstallation] saveInBackground];
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    [[EOInstallation currentInstallation] saveInBackground];
 }
 
 - (void)initTheme
