@@ -35,6 +35,15 @@
     [[EOInstallation currentInstallation] saveInBackground];
 }
 
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    EOMessage *message = [EOMessage messageFromPush:userInfo];
+    if(message){
+        [message setStatus:EOMessageStatusDelivered];
+        [message saveStatusInBackground];
+        NSLog(@"%s %i | message.id:%@", __FUNCTION__, __LINE__,message.id);
+    }
+}
+
 - (void)initTheme
 {
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
