@@ -7,8 +7,16 @@
 //
 
 #import "ProfileViewController.h"
+#import <Digitaleo/Digitaleo.h>
 
 @interface ProfileViewController ()
+
+- (IBAction)saveTapped:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *firstnameInput;
+@property (weak, nonatomic) IBOutlet UITextField *nameInput;
+@property (weak, nonatomic) IBOutlet UITextField *ageInput;
+@property (weak, nonatomic) IBOutlet UITextField *cityInput;
+@property (weak, nonatomic) IBOutlet UITextField *zipcodeInput;
 
 @end
 
@@ -17,21 +25,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.firstnameInput setText:[EOContact currentContact][@"firstname"]];
+    [self.nameInput setText:[EOContact currentContact][@"name"]];
+    [self.ageInput setText:[EOContact currentContact][@"age"]];
+    [self.cityInput setText:[EOContact currentContact][@"city"]];
+    [self.zipcodeInput setText:[EOContact currentContact][@"zipcode"]];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)saveTapped:(id)sender {
+    [EOContact currentContact][@"firstname"] = self.firstnameInput.text;
+    [EOContact currentContact][@"name"] = self.nameInput.text;
+    [EOContact currentContact][@"age"] = self.ageInput.text;
+    [EOContact currentContact][@"city"] = self.cityInput.text;
+    [EOContact currentContact][@"zipcode"] = self.zipcodeInput.text;
+    
+    [[EOContact currentContact] saveInBackgroundWithBlock:^(BOOL succeed, NSError *error) {
+        if(succeed){
+            NSLog(@"%s %i | Profile saved.", __FUNCTION__, __LINE__);
+        }else{
+            NSLog(@"%s %i | Error on save.", __FUNCTION__, __LINE__);
+        }
+    }];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end
