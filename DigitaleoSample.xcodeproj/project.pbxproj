@@ -11,9 +11,9 @@
 		DF0115981A7A785400F6842E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0115971A7A785400F6842E /* RootViewController.m */; };
 		DF01159B1A7A80A000F6842E /* NotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF01159A1A7A80A000F6842E /* NotificationsViewController.m */; };
 		DF01159E1A7A824500F6842E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF01159D1A7A824500F6842E /* HomeViewController.m */; };
-		DF14E7541A80EB2800CEA96E /* Digitaleo.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF14E7531A80EB2800CEA96E /* Digitaleo.plist */; };
 		DF14E7561A80EBD400CEA96E /* Digitaleo-dist.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF14E7551A80EBD400CEA96E /* Digitaleo-dist.plist */; };
 		DF21839E1A837E1500E7BA3B /* Digitaleo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21839D1A837E1500E7BA3B /* Digitaleo.framework */; };
+		DF3C90121C1842E900FCBD0B /* Digitaleo.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF3C90111C1842E900FCBD0B /* Digitaleo.plist */; };
 		DF45D9141A7A3C130098963B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF45D9131A7A3C130098963B /* main.m */; };
 		DF45D9171A7A3C130098963B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF45D9161A7A3C130098963B /* AppDelegate.m */; };
 		DF45D91D1A7A3C130098963B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF45D91B1A7A3C130098963B /* Main.storyboard */; };
@@ -36,16 +36,17 @@
 
 /* Begin PBXFileReference section */
 		80313E6A10FD4BEC95B5AD38 /* libPods-DigitaleoSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DigitaleoSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A877B788FB1A4D5095056F4A /* Pods-DigitaleoSample.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitaleoSample.xcconfig"; path = "Pods/Pods-DigitaleoSample.xcconfig"; sourceTree = "<group>"; };
+		9466B521F41C384A13270017 /* Pods-DigitaleoSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitaleoSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-DigitaleoSample/Pods-DigitaleoSample.release.xcconfig"; sourceTree = "<group>"; };
+		97FF6573A3FA5506FBFCFC0B /* Pods-DigitaleoSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitaleoSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DigitaleoSample/Pods-DigitaleoSample.debug.xcconfig"; sourceTree = "<group>"; };
 		DF0115961A7A785400F6842E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		DF0115971A7A785400F6842E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		DF0115991A7A80A000F6842E /* NotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationsViewController.h; sourceTree = "<group>"; };
 		DF01159A1A7A80A000F6842E /* NotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationsViewController.m; sourceTree = "<group>"; };
 		DF01159C1A7A824500F6842E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		DF01159D1A7A824500F6842E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		DF14E7531A80EB2800CEA96E /* Digitaleo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Digitaleo.plist; sourceTree = "<group>"; };
 		DF14E7551A80EBD400CEA96E /* Digitaleo-dist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Digitaleo-dist.plist"; sourceTree = "<group>"; };
 		DF21839D1A837E1500E7BA3B /* Digitaleo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Digitaleo.framework; sourceTree = "<group>"; };
+		DF3C90111C1842E900FCBD0B /* Digitaleo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Digitaleo.plist; sourceTree = "<group>"; };
 		DF45D90E1A7A3C130098963B /* DigitaleoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitaleoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF45D9121A7A3C130098963B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF45D9131A7A3C130098963B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -92,6 +93,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DB92AD60D7698421E78A7333 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97FF6573A3FA5506FBFCFC0B /* Pods-DigitaleoSample.debug.xcconfig */,
+				9466B521F41C384A13270017 /* Pods-DigitaleoSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DF0115A11A7A8F3800F6842E /* MenuViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,8 +133,8 @@
 				DF45D9101A7A3C130098963B /* DigitaleoSample */,
 				DF45D92A1A7A3C130098963B /* DigitaleoSampleTests */,
 				DF45D90F1A7A3C130098963B /* Products */,
-				A877B788FB1A4D5095056F4A /* Pods-DigitaleoSample.xcconfig */,
 				A91914330BDA459DA34F950A /* Frameworks */,
+				DB92AD60D7698421E78A7333 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,8 +166,8 @@
 			children = (
 				DF45D9121A7A3C130098963B /* Info.plist */,
 				DF45D9131A7A3C130098963B /* main.m */,
-				DF14E7531A80EB2800CEA96E /* Digitaleo.plist */,
 				DF14E7551A80EBD400CEA96E /* Digitaleo-dist.plist */,
+				DF3C90111C1842E900FCBD0B /* Digitaleo.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -231,6 +241,11 @@
 					DF45D90D1A7A3C130098963B = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = L2X785L24N;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					DF45D9261A7A3C130098963B = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -266,7 +281,7 @@
 				DF45D91D1A7A3C130098963B /* Main.storyboard in Resources */,
 				DF45D9221A7A3C130098963B /* LaunchScreen.xib in Resources */,
 				DF45D91F1A7A3C130098963B /* Images.xcassets in Resources */,
-				DF14E7541A80EB2800CEA96E /* Digitaleo.plist in Resources */,
+				DF3C90121C1842E900FCBD0B /* Digitaleo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +307,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-DigitaleoSample-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DigitaleoSample/Pods-DigitaleoSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CFFF503048D34C8C92263B78 /* Check Pods Manifest.lock */ = {
@@ -445,10 +460,12 @@
 		};
 		DF45D9321A7A3C130098963B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A877B788FB1A4D5095056F4A /* Pods-DigitaleoSample.xcconfig */;
+			baseConfigurationReference = 97FF6573A3FA5506FBFCFC0B /* Pods-DigitaleoSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -459,16 +476,19 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = DigitaleoSample;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DF45D9331A7A3C130098963B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A877B788FB1A4D5095056F4A /* Pods-DigitaleoSample.xcconfig */;
+			baseConfigurationReference = 9466B521F41C384A13270017 /* Pods-DigitaleoSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -479,6 +499,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = DigitaleoSample;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
