@@ -9,38 +9,9 @@
 
 @interface EOInstallation : NSObject
 
-/*!
- Gets the currently-running installation from disk and returns an instance of
- it. If this installation is not stored on disk, returns an EOInstallation
- with deviceType and installationId fields set to those of the
- current installation.
- @result Returns an EOInstallation that represents the currently-running
- installation.
- */
-+ (EOInstallation *)currentInstallation;
-
-/*!
- Request APNS registration to be able to receive push notifications
- */
-+ (void)registerForRemoteNotifications;
-
-/*!
- Sets the device token string property from an NSData-encoded token.
- */
-- (void)setDeviceTokenFromData:(NSData *)deviceTokenData;
-
-/*!
- Save asynchronously the instance of installation on Digitaleo's server
- */
-- (void)saveInBackground;
-
-/*!
- Save asynchronously the instance of installation on Digitaleo's server
- @param block The block to execute
- */
-- (void)saveInBackgroundWithBlock:(void (^)(BOOL succeed, NSError *error))block;
-
-/** @name Properties */
+///--------------------------------------
+#pragma mark - Properties
+///--------------------------------------
 
 /// The device type for the EOInstallation.
 @property (nonatomic, readonly) NSString *deviceType;
@@ -68,5 +39,33 @@
 
 /// The timeZone for the EOInstallation.
 @property (nonatomic, readonly) NSString *timeZone;
+
+///--------------------------------------
+#pragma mark - Singleton
+///--------------------------------------
+
+/**
+ Gets the currently-running installation from disk and returns an instance of
+ it. If this installation is not stored on disk, returns an EOInstallation
+ with deviceType and installationId fields set to those of the
+ current installation.
+ @result Returns an EOInstallation that represents the currently-running
+ installation.
+ */
++ (EOInstallation *)currentInstallation;
+
+///--------------------------------------
+#pragma mark - Methods
+///--------------------------------------
+
+/**
+ Request APNS registration to be able to receive push notifications
+ */
++ (void)registerForRemoteNotifications;
+
+/**
+ Sets the device token string property from an NSData-encoded token.
+ */
+- (void)setDeviceTokenFromData:(NSData *)deviceTokenData;
 
 @end

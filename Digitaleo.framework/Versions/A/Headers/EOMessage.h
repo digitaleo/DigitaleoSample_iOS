@@ -15,31 +15,12 @@ typedef NS_ENUM(NSInteger, EOMessageStatus) {
 
 @interface EOMessage : NSObject
 
-/*!
- Alert Digitaleo's server than this notification was delivered
- @param NSDictionary user informations
- @return EOMessage message created from userInfo if possible
- */
-+ (EOMessage *)messageFromPush:(NSDictionary *)userInfo;
+///--------------------------------------
+#pragma mark - Properties
+///--------------------------------------
 
-/*!
- Load message's data from Digitaleo's server
- @param block The block to execute
- */
-+ (void)findInBackgroundWithBlock:(void (^)(NSArray *messages, NSError *error))block;
-
-/*!
- Save asynchronously the status of message on Digitaleo's server
- */
-- (void)saveStatusInBackground;
-
-/*!
- Save asynchronously the status of message on Digitaleo's server
- @param block The block to execute
- */
-- (void)saveStatusInBackgroundWithBlock:(void (^)(BOOL succeed, NSError *error))block;
-
-/** @name Properties */
+/// The server status for the EOMessage.
+@property (nonatomic) EOMessageStatus serverStatus;
 
 /// The id for the EOMessage.
 @property (nonatomic) NSString *id;
@@ -52,5 +33,16 @@ typedef NS_ENUM(NSInteger, EOMessageStatus) {
 
 /// The status for the EOMessage.
 @property (nonatomic) EOMessageStatus status;
+
+///--------------------------------------
+#pragma mark - Methods
+///--------------------------------------
+
+/**
+ Alert Digitaleo's server than this notification was delivered
+ @param NSDictionary user informations
+ @return EOMessage message created from userInfo if possible
+ */
++ (EOMessage *)messageFromPush:(NSDictionary *)userInfo;
 
 @end

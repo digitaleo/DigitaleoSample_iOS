@@ -7,6 +7,7 @@
 //
 
 #import "ProfileViewController.h"
+#import "AppDelegate.h"
 #import <Digitaleo/Digitaleo.h>
 
 @interface ProfileViewController ()
@@ -18,12 +19,17 @@
 @property (weak, nonatomic) IBOutlet UITextField *cityInput;
 @property (weak, nonatomic) IBOutlet UITextField *zipcodeInput;
 
+@property EOMobileService *mobileService;
+
 @end
 
 @implementation ProfileViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    self.mobileService = appDelegate.mobileService;
     
     [self.firstnameInput setText:[EOContact currentContact][@"firstname"]];
     [self.nameInput setText:[EOContact currentContact][@"name"]];
@@ -38,8 +44,9 @@
     [EOContact currentContact][@"age"] = self.ageInput.text;
     [EOContact currentContact][@"city"] = self.cityInput.text;
     [EOContact currentContact][@"zipcode"] = self.zipcodeInput.text;
-    
-    [[EOContact currentContact] saveInBackgroundWithBlock:^(BOOL succeed, NSError *error) {
+
+    [self.mobileService saveContact:[EOContact currentContact]];
+    [self.mobileService saveContact:[EOContact currentContact] completion:^(BOOL succeed, NSError *error) {
         if(succeed){
             NSLog(@"%s %i | Profile saved.", __FUNCTION__, __LINE__);
         }else{

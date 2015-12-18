@@ -7,16 +7,21 @@
 //
 
 #import "NotificationsViewController.h"
+#import "AppDelegate.h"
 #import <Digitaleo/Digitaleo.h>
 
 @interface NotificationsViewController ()
 @property (nonatomic, strong)NSArray *notifications;
+@property EOMobileService *mobileService;
 @end
 
 @implementation NotificationsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    self.mobileService = appDelegate.mobileService;
     
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(handleRefresh:) forControlEvents:UIControlEventValueChanged];
@@ -29,7 +34,7 @@
 }
 
 - (void)loadNotifications {
-    [EOMessage findInBackgroundWithBlock:^(NSArray *messages, NSError *error) {
+    [self.mobileService getMessages:@[] completion:^(NSArray *messages, NSError *error) {
         if(!error){
             self.notifications = messages;
             [self.tableView reloadData];
@@ -56,10 +61,12 @@
     UILabel *label = (UILabel *)[cell viewWithTag:0];
     
     EOMessage *message = [self.notifications objectAtIndex:indexPath.row];
-    [message setStatus:EOMessageStatusDelivered];
-    [message saveStatusInBackground];
+    if (message.status < EOMessageStatusDelivered) {
+        [message setStatus:EOMessageStatusDelivered];
+        [self.mobileService saveMessage:message];
+    }
     label.text = [message valueForKey:@"text"];
-    
+
     if(message.status < EOMessageStatusRead){
         [cell setBackgroundColor:[UIColor colorWithRed:0.839 green:0.903 blue:0.992 alpha:1.000]];
     }else{
@@ -73,7 +80,7 @@
 {
     EOMessage *message = [self.notifications objectAtIndex:indexPath.row];
     [message setStatus:EOMessageStatusRead];
-    [message saveStatusInBackground];
+    [self.mobileService saveMessage:message];
 }
 
 @end

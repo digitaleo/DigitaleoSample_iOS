@@ -9,7 +9,21 @@
 
 @interface EOContact : NSObject
 
-/*!
+///--------------------------------------
+#pragma mark - Properties
+///--------------------------------------
+
+/// The id of EOContact.
+@property (nonatomic) NSString *id;
+
+/// Dictionary wich contains all contact's data.
+@property (readonly) NSMutableDictionary *data;
+
+///--------------------------------------
+#pragma mark - Singleton
+///--------------------------------------
+
+/**
  Gets the currently-running contact from disk and returns an instance of
  it. If this contact is not stored on disk, returns an EOContact.
  @result Returns an EOContact that represents the currently-running
@@ -17,40 +31,28 @@
  */
 + (EOContact *)currentContact;
 
-/*!
- Save asynchronously the instance of contact on Digitaleo's server
- */
-- (void)saveInBackground;
+///--------------------------------------
+#pragma mark - Methods
+///--------------------------------------
 
-/*!
- Save asynchronously the instance of contact on Digitaleo's server
- @param block The block to execute
+/**
+ Save contact in file
  */
-- (void)saveInBackgroundWithBlock:(void (^)(BOOL succeed, NSError *error))block;
+- (void)save;
 
-/*!
- Load contact's data from Digitaleo's server
- */
-- (void)loadInBackground;
+///--------------------------------------
+#pragma mark - Subscript
+///--------------------------------------
 
-/*!
- Load contact's data from Digitaleo's server
- @param block The block to execute
- */
-- (void)loadInBackgroundWithBlock:(void (^)(BOOL succeed, NSError *error))block;
-
-/*!
+/**
  Getter for subscripting
  */
 - (id)objectForKeyedSubscript:(id <NSCopying>)key;
 
-/*!
+/**
  Setter for subscripting
  Key "_id" not allowed
  */
 - (void)setObject:(id)obj forKeyedSubscript:(id <NSCopying>)key;
-
-/// The id of EOContact.
-@property (nonatomic) NSString *id;
 
 @end

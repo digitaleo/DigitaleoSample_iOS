@@ -12,7 +12,6 @@
 		DF01159B1A7A80A000F6842E /* NotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF01159A1A7A80A000F6842E /* NotificationsViewController.m */; };
 		DF01159E1A7A824500F6842E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF01159D1A7A824500F6842E /* HomeViewController.m */; };
 		DF14E7561A80EBD400CEA96E /* Digitaleo-dist.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF14E7551A80EBD400CEA96E /* Digitaleo-dist.plist */; };
-		DF21839E1A837E1500E7BA3B /* Digitaleo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21839D1A837E1500E7BA3B /* Digitaleo.framework */; };
 		DF3C90121C1842E900FCBD0B /* Digitaleo.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF3C90111C1842E900FCBD0B /* Digitaleo.plist */; };
 		DF45D9141A7A3C130098963B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF45D9131A7A3C130098963B /* main.m */; };
 		DF45D9171A7A3C130098963B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF45D9161A7A3C130098963B /* AppDelegate.m */; };
@@ -22,6 +21,7 @@
 		DF45D92E1A7A3C130098963B /* DigitaleoSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF45D92D1A7A3C130098963B /* DigitaleoSampleTests.m */; };
 		DF45D9411A7A402E0098963B /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF45D9401A7A402E0098963B /* MenuViewController.m */; };
 		DF45D9511A7A478B0098963B /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF45D9501A7A478B0098963B /* ProfileViewController.m */; };
+		DF5256031C22CE330014E917 /* Digitaleo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5256021C22CE330014E917 /* Digitaleo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,6 @@
 		DF01159C1A7A824500F6842E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		DF01159D1A7A824500F6842E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		DF14E7551A80EBD400CEA96E /* Digitaleo-dist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Digitaleo-dist.plist"; sourceTree = "<group>"; };
-		DF21839D1A837E1500E7BA3B /* Digitaleo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Digitaleo.framework; sourceTree = "<group>"; };
 		DF3C90111C1842E900FCBD0B /* Digitaleo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Digitaleo.plist; sourceTree = "<group>"; };
 		DF45D90E1A7A3C130098963B /* DigitaleoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitaleoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF45D9121A7A3C130098963B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		DF45D9401A7A402E0098963B /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		DF45D94F1A7A478B0098963B /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		DF45D9501A7A478B0098963B /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		DF5256021C22CE330014E917 /* Digitaleo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Digitaleo.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F9DEE2A6FE247388F7FFCFA /* libPods-DigitaleoSample.a in Frameworks */,
-				DF21839E1A837E1500E7BA3B /* Digitaleo.framework in Frameworks */,
+				DF5256031C22CE330014E917 /* Digitaleo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +87,7 @@
 		A91914330BDA459DA34F950A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DF21839D1A837E1500E7BA3B /* Digitaleo.framework */,
+				DF5256021C22CE330014E917 /* Digitaleo.framework */,
 				80313E6A10FD4BEC95B5AD38 /* libPods-DigitaleoSample.a */,
 			);
 			name = Frameworks;

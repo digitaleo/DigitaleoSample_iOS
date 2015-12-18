@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <Digitaleo/Digitaleo.h>
 
 @interface AppDelegate ()
 
@@ -21,6 +20,11 @@
     [self initTheme];
     
     [Digitaleo setupFramework];
+
+    [EOLogger sharedLogger].logLevel = EOLogLevelDebug;
+
+    self.mobileService = [[EOMobileService alloc] initWithConfiguration:EOConfiguration.defaultConfiguration];
+
     [EOInstallation registerForRemoteNotifications];
     
     return YES;
@@ -28,18 +32,18 @@
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     [[EOInstallation currentInstallation] setDeviceTokenFromData:deviceToken];
-    [[EOInstallation currentInstallation] saveInBackground];
+    [self.mobileService saveInstallation:[EOInstallation currentInstallation]];
 }
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
-    [[EOInstallation currentInstallation] saveInBackground];
+    [self.mobileService saveInstallation:[EOInstallation currentInstallation]];
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     EOMessage *message = [EOMessage messageFromPush:userInfo];
     if(message){
         [message setStatus:EOMessageStatusDelivered];
-        [message saveStatusInBackground];
+        [self.mobileService saveMessage:message];
         NSLog(@"%s %i | message.id:%@", __FUNCTION__, __LINE__,message.id);
     }
 }
