@@ -20,10 +20,8 @@
     [self initTheme];
     
     [Digitaleo setupFramework];
-
-    [EOLogger sharedLogger].logLevel = EOLogLevelDebug;
-
     self.mobileService = [[EOMobileService alloc] initWithConfiguration:EOConfiguration.defaultConfiguration];
+    [EOLogger sharedLogger].logLevel = EOLogLevelDebug;
 
     [EOInstallation registerForRemoteNotifications];
     

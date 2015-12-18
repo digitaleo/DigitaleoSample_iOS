@@ -45,7 +45,6 @@
     [EOContact currentContact][@"city"] = self.cityInput.text;
     [EOContact currentContact][@"zipcode"] = self.zipcodeInput.text;
 
-    [self.mobileService saveContact:[EOContact currentContact]];
     [self.mobileService saveContact:[EOContact currentContact] completion:^(BOOL succeed, NSError *error) {
         if(succeed){
             NSLog(@"%s %i | Profile saved.", __FUNCTION__, __LINE__);
